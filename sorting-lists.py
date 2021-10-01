@@ -26,5 +26,23 @@ print(letters)
 
 sorted_letters_asc = sorted(letters) # Sorted ascending: abcde...
 sorted_letters_dsc = sorted(letters, reverse=True) # Sorted descending ..edcba
+###### The "reverse=True" part above ^^^^^^^^^^^ is called a "Keyword Arguement"
 print(sorted_letters_asc)
 print(letters)
+print()
+
+# Reversing a list
+names = ['Zak', 'Ash', 'Joe', 'Phil']
+print('Normal order, not yet reversed:')
+print(names, '\n')
+
+reversed_names = list(reversed(names))
+print(reversed_names)
+
+names.reverse() # Reverse method - changes the order of the original var
+print(names)
+
+truth = [False, True, False, True, True, True, False]
+print(truth)
+sorted_truth = list(reversed(truth))
+print(sorted_truth)
