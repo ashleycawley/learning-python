@@ -1,6 +1,9 @@
 
 ## if statements
 
+if 'hello world' == 'hello world':
+    print('Hello World! I\'m doing something.') # Note indentation is important
+
 veg = False
 
 if veg == True:
@@ -26,3 +29,15 @@ if plate:
     print('The plate is clean!')
 else:
     print('The plate is still dirty and has food on it')
+
+## elif
+guess = 5
+
+if guess == 5:
+    print('You\'re right! It was 5, you win.')
+elif guess == 4:
+    print('You were very close, you are a runner up.')
+elif guess == 6:
+    print('You were very close, you are a runner up.')
+else:
+    print('You were wrong, sorry you loose.')
