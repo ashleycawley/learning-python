@@ -64,7 +64,7 @@ while True:
         print('Access Denied - Try Again...')
 
 
-## Four Methods:
+## Reading Files - Four Methods:
 
 # This one is for older python and is a bit more cumbersome:
 file = open('/home/acawley/Documents/python/learning-python/file.txt', 'r')
@@ -91,3 +91,25 @@ file.close()
 with open('/home/acawley/Documents/python/learning-python/file.txt', 'r') as file:
     for line in file:
         print(line)
+
+## Writing and Copying Files
+with open('my-file.txt', 'w') as file:
+    file.write('hello world')
+# NOTE: 'w' stands for write and it blanks the file when starting
+
+# Append to the end of the file:
+with open('my-file.txt', 'a') as file:
+    file.write('hello world')
+# NOTE: 'a' - is what makes it append to the end of the file
+
+
+## Copying a File
+with open('source-data.txt', 'r') as input_file:
+    with open('destination-data.txt', 'w') as output:
+        for line in input_file:
+            output.write(line)
+            
+# The same statement can be written in a different layout:
+with open('source-data.txt', 'r') as input_file, open('destination-data.txt', 'w') as output:
+        for line in input_file:
+            output.write(line)
