@@ -41,6 +41,9 @@ with open('txt/one.txt', 'r') as input_file, open('txt/three.txt', 'w') as outpu
         for line in input_file:
             if line != 'new\n':
                 output.write(line)
+
+# Just my own little side-quest: I wanted to set myself the challenge of parsing ALL files within
+# a sub-directory, copying those files to new files BUT parsing-out any lines that just said "new"
 import os
 my_path = '/home/acawley/Documents/python/learning-python/txt/'
 file_list = os.listdir(my_path)
