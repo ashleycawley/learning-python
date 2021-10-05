@@ -47,5 +47,5 @@ Quantity: """
             food_label = "Pickles"
 
         total = cost * quantity
-        result = "You are buying {} {} for ${}".format(quantity, food_label, total)
+        result = "You are buying {} {} for £{}".format(quantity, food_label, total)
         print(result)
