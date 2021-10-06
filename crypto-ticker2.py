@@ -8,15 +8,10 @@ def jprint(obj):
     text = json.dumps(obj, sort_keys=True, indent=4)
     print(text)
 
-counter = 0
-
 while True:
-    print('Counter:', counter)
-    print()
     response = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd")
     print()
     print('Status Code: ', response.status_code)
     print()
     jprint(response.json())
     time.sleep(30)
-    counter = counter + 1
