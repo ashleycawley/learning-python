@@ -23,7 +23,6 @@ while True:
                 
             data = json.loads(source)
             crypto_price = json.dumps(data['{}'.format(line)]['usd'], indent=2)
-            print('{}: ${}'.format(line, crypto_price))
-            print()
-        time.sleep(30)
+            print("{}: ${}".format(line.capitalize(), crypto_price))
+        time.sleep(60)
         cls() # Clears the screen
