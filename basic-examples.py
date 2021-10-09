@@ -113,3 +113,8 @@ with open('source-data.txt', 'r') as input_file:
 with open('source-data.txt', 'r') as input_file, open('destination-data.txt', 'w') as output:
         for line in input_file:
             output.write(line)
+
+## Executing a Shell Command
+os.system('whoami')
+os.system('ls')
+os.system('ssh -p 7669 pi@einkPi uptime') # This example assumes that SSH key-based auth is already in place
