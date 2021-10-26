@@ -1,0 +1,3 @@
+# hash
+
+print(hash('text'))

@@ -19,10 +19,7 @@ with open('mail/message.txt', 'r') as message_file, open('mail/winners.txt', 'r'
 
 for winner in winners:
     filename = winner.strip('\n') + '.txt'
-    with open('mail/' + filename, 'w') as f:
-        f.write('Dear ' + winner.strip('\n') + ',\n') 
-        f.write(message)
+    with open('mail/message.txt', 'w') 
 
-#print(message)
-#print(winners)
-
+print(message)
+print(winners)
