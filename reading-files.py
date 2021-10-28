@@ -1,5 +1,12 @@
 
 ## Reading Files
+
+## Four methods or modes when opening a file:
+# r - read
+# w - write
+# a - append
+# rb - read binary file (.gif, .exe etc.)
+
 # The file I'm going to be working with:
 my_file_path = '/home/acawley/Documents/Programming/Python/learning-python/file.txt'
 # /home/acawley/Documents/python/learning-python/file.txt
