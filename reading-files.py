@@ -8,13 +8,13 @@
 # rb - read binary file (.gif, .exe etc.)
 
 # The file I'm going to be working with:
-my_file_path = '/home/acawley/Documents/Programming/Python/learning-python/file.txt'
+my_file_path = '/home/acawley/Documents/Python/learning-python/file.txt'
 # /home/acawley/Documents/python/learning-python/file.txt
 
 ## Four Methods:
 
 ## 1) This one is for older python and is a bit more cumbersome:
-file = open('/home/acawley/Documents/Programming/Python/learning-python/file.txt', 'r')
+file = open('/home/acawley/Documents/Python/learning-python/file.txt', 'r')
 for line in file:
     print(line)
 file.close()
@@ -45,7 +45,22 @@ with open(my_file_path, 'r') as file:
     content = file.read(10) # Reads only the first 10 bytes of the file
     print(content)
 
-## Reading X number of lines uses file.readlines()
+## Reading X number of *BYTES* per line with file.readlines()
 with open(my_file_path, 'r') as file:
     content = file.readlines(5) # Reads the first 5 lines in the file
+    print(content)
+
+## Reading X number of *BYTES* per line with file.readlines()
+with open(my_file_path, 'r') as file:
+    content = file.readlines(5) # Reads the first 5 lines in the file
+    print(content)
+
+## Reading X number of *LINES* from file
+with open('file.txt', 'r') as file:
+    content = file.readlines()[0:5] # Retrieves lines 0 - 5
+    print(content)
+
+## Reading X number of *LINES* from the *END* of a file
+with open('file.txt', 'r') as file:
+    content = file.readlines()[-5:] # Retrieves the last 5 lines of the file
     print(content)
