@@ -5,15 +5,20 @@
 # 4. Tuples
 
 ### List # NOTE: [ ]
-numbers = [1, 2, 3, 4, 5]
+numbers = [1, 2, 3, 4, 5] # List of numbers
+strings = ['abc', 'xyz', 'qty'] # List of strings
 
-### Dictionary # NOTE: { } but use of multiple lines, colons and commas.
-person_info = {
+### Dictionary # NOTE: { } colons and commas.
+person_info = {"name": "Ashley", "age": 34, "hair": "Black", "height": 5.10}
+
+# The same dictionary information can be represented across multiple lines to make it more readable:
+person_info2 = {
     "name": "Ashley",
     "age": 34,
     "hair": "Black",
     "height": 5.10
 }
+
 # The value can be recalled by its value name or labe like:
 print(person_info['age'])
 

@@ -2,10 +2,13 @@
 
 # When you ask to import a module the Python interpreter will check in a few places:
 # 1) the current working directory, so if you started python3 in a directory that contained: mod.py
-#    And you ran: import mod it would import it in.
+#    And you ran: import mod it would import it in. Note: you didn't have to specify the .py file extention.
 # 2) Other paths that are checked can by seen by using:
 import sys
 print(sys.path)
+
+# Multiple modules can be imported on one line like:
+import abc, ast, base64
 
 # Lets add a new path to the existing sys.path which are checked, we do this by appending a path with:
 sys.path.append(r'/home/acawley/Documents/Python/learning-python/ModulesAndPackages/new_path') # The 'r' stands for raw path
@@ -22,3 +25,8 @@ print(new.__file__)
 # But we can drop the mod. if we:
 from mod import friend_list
 print(friend_list)
+
+# Conflicting names - if something you want to import has a conflicting name that clashes with something in your code
+# you can rename it when you import it:
+from mod import friend_list as friends
+print(friends)
