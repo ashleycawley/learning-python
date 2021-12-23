@@ -1,4 +1,6 @@
-### Data Types - There are four basic data types in Python:
+# NOTE: for standard data types (integer, boolean etc.) see file: data-types.py
+
+### Composite Data Types - There are four composite data types in Python:
 # 1. Lists
 # 2. Dictionaries
 # 3. Sets

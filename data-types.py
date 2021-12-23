@@ -1,3 +1,5 @@
+# NOTE: for "Composite Data Types" like lists, sets, tuples etc. then see file: composite-data-types-by-real-python.py
+
 # This is a boolean
 likes_cheese = True # Snake case variable name
 has13Apples = False # Camel case variable name
