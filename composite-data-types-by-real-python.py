@@ -10,7 +10,7 @@
 numbers = [1, 2, 3, 4, 5] # List of numbers
 strings = ['abc', 'xyz', 'qty'] # List of strings
 
-### Dictionary # NOTE: { } colons and commas.
+### Dictionary # NOTE: {'key':'value'} colons and commas.
 person_info = {"name": "Ashley", "age": 34, "hair": "Black", "height": 5.10}
 
 # The same dictionary information can be represented across multiple lines to make it more readable:
